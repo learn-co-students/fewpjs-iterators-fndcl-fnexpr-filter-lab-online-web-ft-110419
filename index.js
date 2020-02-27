@@ -4,3 +4,10 @@ function findMatching(array, string) {
     })
     return names
 }
+
+function fuzzyMatch (array, string) {
+    let names = array.filter(function(n) {
+        return n.include(string)
+    })
+    return names
+}
