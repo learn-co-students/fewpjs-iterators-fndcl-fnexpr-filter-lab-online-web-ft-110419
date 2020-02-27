@@ -6,8 +6,6 @@ function findMatching(array, string) {
 }
 
 function fuzzyMatch (array, string) {
-    let names = array.filter(function(n) {
-        return n.include(string)
-    })
-    return names
+    let length = string.length
+    return array.filter(function(n) {return n.substring(0, length) === string})
 }
