@@ -9,3 +9,8 @@ function fuzzyMatch (array, string) {
     let length = string.length
     return array.filter(function(n) {return n.substring(0, length) === string})
 }
+
+function matchName(array, string) {
+    let newArray = array.filter(function(n) { return n.name === string })
+    return newArray
+}
