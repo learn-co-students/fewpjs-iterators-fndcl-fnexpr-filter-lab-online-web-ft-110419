@@ -28,11 +28,7 @@ let obj = [
 ]
 
 let matchName = (person, driver) => {
-    let thePerson = person.filter(name => {
-        if (name.name === driver) return name
-    })
-    debugger
-    return thePerson
+    return person.filter(individual => individual.name === driver)
 }
 
 matchName(obj, 'Bobby')
